@@ -211,12 +211,10 @@ var clipboardHTML;
 				content = content.replace(/-- page break --\s*<p>&nbsp;<\/p>/gi, ""); // Remove pagebreaks
 				content = content.replace(/-- page break --/gi, ""); // Remove pagebreaks
 
-				if (!t.editor.getParam('force_p_newlines')) {
-					content = content.replace('', '' ,'gi');
-					content = content.replace('</p>', '<br /><br />' ,'gi');
-				}
+				content = content.replace('', '' ,'gi');
+				content = content.replace('</p>', '<br /><br />' ,'gi');
 
-				if (!tinymce.isIE && !t.editor.getParam('force_p_newlines')) {
+				if (!tinymce.isIE) {
 					content = content.replace(/<\/?p[^>]*>/gi, "");
 				}
 
