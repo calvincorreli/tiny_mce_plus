@@ -122,3 +122,16 @@
 - plugin_preview_pageurl
 - plugin_preview_width
 - plugin_preview_height
+- paste_create_paragraphs
+- paste_create_linebreaks
+- paste_use_dialog
+- paste_convert_middot_lists
+- paste_unindented_list_class
+- paste_convert_headers_to_strong
+- paste_insert_word_content_callback
+- paste_as_plain_text 
+- paste_convert_headers_to_tag
+- paste_remove_spans
+- paste_remove_styles
+- paste_strip_class_attributes
+
